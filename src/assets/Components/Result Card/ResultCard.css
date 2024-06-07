@@ -1,0 +1,100 @@
+.result-card-container {
+    height: 35em;
+    width: 25em;
+
+    padding: 3em;
+    box-sizing: border-box;
+
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-header {
+    font-size: 24px;
+    font-weight: 500;
+
+    color: hsl(0, 0%, 100%);
+    width: fit-content;
+    display: flex;
+    margin-bottom: 1em;
+
+    opacity: 0.8;
+}
+
+.result-score {
+    width: 12em;
+    height: 12em;
+    font-weight: 800;
+    border-radius: 100%;
+
+    background: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    resize: none;
+}
+
+.main-score {
+    font-size: 3.5em;
+    font-weight: 800;
+}
+.max-score {
+    color: hsl(0, 0%, 100%, 50%);
+    font-weight: 700;
+}
+
+.score-description {
+    margin: 1.25em 1em 0.5em 1em;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.score-comparison {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 1.25em;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1279px){
+    .result-card-container {
+        height: 43.25vh;
+        width: 100%;
+
+        border-radius: 0 0 5vh 5vh;
+        padding: 1vh;
+    }
+    .result-header {
+        margin: 1em 0 1em 0;
+        font-size: 2vh;
+    }
+    .result-score {
+        padding: 1em;
+        height: 15vh;
+        width: 15vh;
+    }
+    .main-score {
+        font-size: 6vh;
+    }
+    .max-score {
+        font-size: 1.8vh;
+    }
+
+    .score-comparison {
+        font-size: 1.6vh;
+        width: 60%;
+        font-weight: 500;
+        padding-bottom: 4vh;
+    }
+
+    .score-description {
+        margin: 1vh;
+        font-size: 3vh;
+    }
+}
