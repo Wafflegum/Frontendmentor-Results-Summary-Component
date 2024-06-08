@@ -1,9 +1,14 @@
-@font-face {
-  font-family: 'Hanken';
-  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hanken-grotesk-hg {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
+
 *{
-  font-family: 'Hanken';
+  font-family: 'Hanken Grotesk';
 
   font-weight: 500;
 }
